@@ -7,7 +7,7 @@ import repositoy.ProductRepository;
 
 public class ProductManager {
 
-    ProductRepository productRepository;
+    private ProductRepository productRepository;
 
     public ProductManager(ProductRepository productRepository) {
         this.productRepository = productRepository;
