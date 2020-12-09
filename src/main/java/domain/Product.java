@@ -1,5 +1,7 @@
 package domain;
 
+import repositoy.ProductRepository;
+
 import java.util.Objects;
 
 public class Product {
@@ -7,7 +9,14 @@ public class Product {
     private String name;
     private int price;
 
+
     public Product() {
+    }
+
+    public boolean matches(String search) {
+        if (getName().equalsIgnoreCase(search)) {
+            return true;
+        } else return false;
     }
 
     public Product(String name) {
